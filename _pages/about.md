@@ -58,7 +58,7 @@ Work in Progress
   <div style="flex: 1; line-height: 1.3; font-size: 0.7rem; color: #333; text-align: justify;">
     <h3 style="margin-top: 0; font-size: 0.9rem; font-weight: 600; color: #222; text-align: left;">
       Rainfall, Fire Risk and Housing Prices in Hawai‘i
-      <em style="font-weight: 400; font-size: 0.75rem; color: #555;"> (<i>Working Paper</i>)</em>
+      <em style="font-weight: 400; font-size: 0.75rem; color: #555;"> </em>
     </h3>
     <p style="margin: 0; font-size: 0.7rem;">
 We identify market responses to rainfall and fire risk in Hawai‘i’s real estate by exploiting variations in precipitation patterns and fire risk exposure. Using transaction-level housing data we document three key findings. First, rainfall shocks depress property values, highlighting the disruptive impact of extreme precipitation. Second, wildfire risk also reduces property values, underscoring the market’s sensitivity to fire-related hazards. Third, the negative impact of rainfall shocks is moderated in fire-prone areas, suggesting that markets value the fire-mitigating benefits of increased rainfall. 
@@ -80,7 +80,7 @@ We identify market responses to rainfall and fire risk in Hawai‘i’s real est
   <div style="flex: 1; line-height: 1.3; font-size: 0.7rem; color: #333; text-align: justify;">
     <h3 style="margin-top: 0; font-size: 0.9rem; font-weight: 600; color: #222; text-align: left;">
       Teaching Strategies and Key Issues in American Indian and Alaskan Native Education
-      <em style="font-weight: 400; font-size: 0.75rem; color: #555;"> (<i>Working Paper</i>)</em>
+      <em style="font-weight: 400; font-size: 0.75rem; color: #555;"> </em>
     </h3>
     <p style="margin: 0; font-size: 0.7rem;">
 We examine how teachers address the unique challenges and opportunities of educating American Indian and Alaska Native (AI/AN) students. Using unsupervised machine learning on open-ended survey responses, we identify various themes on effective teaching strategies and pressing issues. Teachers’ reflections vary by grade level, AI/AN student density, and school type, highlighting the complex and context-specific nature of AI/AN education. Our findings may be of help to policymakers seeking to better understand the priorities and perspectives of teachers in AI/AN education.
