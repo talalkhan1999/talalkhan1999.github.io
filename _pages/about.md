@@ -10,7 +10,7 @@ redirect_from:
 
 <div style="text-align: justify;">
   
-I am a PhD student in Finance at the Shidler College of Business, [University of Hawaiʻi at Mānoa](https://manoa.hawaii.edu/). My research interests span financial intermediation, corporate finance, real estate, and environmental economics. My past affiliations include [University of Hawaiʻi Economic Research Organization](https://uhero.hawaii.edu/) and the [Institute for Sustainability and Resilience at Mānoa](https://manoa.hawaii.edu/isr/).
+I am a PhD student in Finance at the Shidler College of Business, <a href="https://manoa.hawaii.edu/">University of Hawaiʻi at Mānoa</a>. My research interests span financial intermediation, corporate finance, real estate, and environmental economics. My past affiliations include <a href="https://uhero.hawaii.edu/">University of Hawaiʻi Economic Research Organization</a> and the <a href="https://manoa.hawaii.edu/isr/">Institute for Sustainability and Resilience at Mānoa</a>.
 
 </div>
 
