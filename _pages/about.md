@@ -16,14 +16,14 @@ Publications
 
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 2em; flex-wrap: nowrap; min-width: 600px;">
   <!-- Left Image -->
-  <div style="flex: 0 0 160px; min-width: 160px;">
+  <div style="flex: 0 0 200px; min-width: 200px;">
     <img src="https://raw.githubusercontent.com/talalkhan1999/talalkhan1999.github.io/master/images/SLR.jpg" 
          alt="Sea level rise impact on housing" 
          style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
   </div>
   <!-- Text Section -->
-  <div style="flex: 1; line-height: 1.3; font-size: 0.7rem; color: #333;">
-    <h3 style="margin-top: 0; font-size: 0.9rem; font-weight: 600; color: #222;">
+  <div style="flex: 1; line-height: 1.3; font-size: 0.7rem; color: #333; text-align: justify;">
+    <h3 style="margin-top: 0; font-size: 0.9rem; font-weight: 600; color: #222; text-align: left;">
       Sea Level Rise Impacts on Residential Real Estate Value in Hawaiʻi
       <em style="font-weight: 400; font-size: 0.75rem; color: #555;"> (Forthcoming, Climatic Change)</em>
     </h3>
@@ -32,4 +32,5 @@ Publications
     </p>
   </div>
 </div>
+
 
