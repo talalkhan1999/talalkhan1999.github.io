@@ -72,7 +72,7 @@ We identify market responses to rainfall and fire risk in Hawai‘i’s real est
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 2em; flex-wrap: nowrap; min-width: 600px;">
   <!-- Left Image -->
   <div style="flex: 0 0 220px; min-width: 220px;">
-    <img src="https://raw.githubusercontent.com/talalkhan1999/talalkhan1999.github.io/master/images/rainFire.png" 
+    <img src="https://raw.githubusercontent.com/talalkhan1999/talalkhan1999.github.io/master/images/powwow.jpg" 
          alt="Coastal Erosion on Beachfront Properties" 
          style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
   </div>
