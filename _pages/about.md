@@ -58,10 +58,12 @@ Work in Progress
   <div style="flex: 1; line-height: 1.3; font-size: 0.7rem; color: #333; text-align: justify;">
     <h3 style="margin-top: 0; font-size: 0.9rem; font-weight: 600; color: #222; text-align: left;">
       Sea Level Rise Impacts on Residential Real Estate Value in Hawaiʻi
-      <em style="font-weight: 400; font-size: 0.75rem; color: #555;"> (Forthcoming, <i>Climatic Change</i>)</em>
+      <em style="font-weight: 400; font-size: 0.75rem; color: #555;"> (<i>Working Paper</i>)</em>
     </h3>
     <p style="margin: 0; font-size: 0.7rem;">
-      We show that Hawaiʻi's housing market is already responding to the risks of sea level rise (SLR). Drawing on two decades of repeat sales data, we find that homes projected to be exposed to 3 ft of SLR appreciate about 0.8% less per year than comparable unexposed homes, with larger discounts on Oʻahu and Hawaiʻi Island.  The discount is in part explained by local buyers, underscoring how beliefs and local knowledge shape climate risk pricing. Adaptive measures such as seawalls do not offset the climate penalty. The discount is also tied to direct inundation risk rather than neighborhood-level loss of function, suggesting markets focus on property-level habitability. A back-of-the-envelope calculation implies that buyers expect meaningful SLR impacts within the next 50 years, highlighting how long-term climate risks are being priced into coastal real estate today.
+We identify market responses to rainfall and fire risk in Hawai‘i’s real estate by exploiting variations in precipitation patterns and fire risk exposure. Using transaction-level housing data we document three key findings. First, rainfall shocks depress property values, highlighting the disruptive impact of extreme precipitation. Second, wildfire risk also reduces property values, underscoring the market’s sensitivity to fire-related hazards. Third, the negative impact of rainfall shocks is moderated in fire-prone areas, suggesting that markets value the fire-mitigating benefits of increased rainfall. 
+
+      
     </p>
   </div>
 </div>
