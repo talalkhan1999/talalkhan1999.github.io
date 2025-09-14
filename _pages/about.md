@@ -12,6 +12,7 @@ redirect_from:
   
 I am a PhD student in Finance at the Shidler College of Business, <a href="https://manoa.hawaii.edu/">University of Hawaiʻi at Mānoa</a>. My research interests span financial intermediation, corporate finance, real estate, and environmental economics. My past affiliations include <a href="https://uhero.hawaii.edu/">University of Hawaiʻi Economic Research Organization</a> and the <a href="https://manoa.hawaii.edu/isr/">Institute for Sustainability and Resilience at Mānoa</a>.
 
+
 </div>
 
 
@@ -42,12 +43,11 @@ Publications
 </div>
 
 
-<div style="margin-top: 2em;"></div>
+<div style="margin-top: 5em;"></div>
 
 
 Work in Progress
 ======
-{: #workinprogress}
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 2em; flex-wrap: nowrap; min-width: 600px;">
   <!-- Left Image -->
   <div style="flex: 0 0 220px; min-width: 220px;">
