@@ -21,7 +21,6 @@ I am a PhD student in Finance at the Shidler College of Business, <a href="https
 
 Publications
 ======
-{: #publications}
 
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 2em; flex-wrap: nowrap; min-width: 600px;">
   <!-- Left Image -->
