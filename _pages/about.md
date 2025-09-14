@@ -15,11 +15,12 @@ I am a PhD student in Finance at the Shidler College of Business, <a href="https
 </div>
 
 
-<div style="margin-top: 2em;"></div>
+<div style="margin-top: 5em;"></div>
 
 
 Publications
 ======
+{: #publications}
 
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 2em; flex-wrap: nowrap; min-width: 600px;">
   <!-- Left Image -->
@@ -46,7 +47,7 @@ Publications
 
 Work in Progress
 ======
-
+{: #workinprogress}
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 2em; flex-wrap: nowrap; min-width: 600px;">
   <!-- Left Image -->
   <div style="flex: 0 0 220px; min-width: 220px;">
