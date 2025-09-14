@@ -1,19 +1,32 @@
 /* ==========================================================================
-   CUSTOM DARK GREEN THEME
+   DEFAULT THEME
    ========================================================================== */
 
-$gray                       : #6b7a6f;  // muted gray-green
-$dark-gray                  : #2e3d32;  // deep greenish-gray
-$darker-gray                : #1d2a21;  // almost-black green
-$light-gray                 : #9fa8a3;  // lighter muted green-gray
-$lighter-gray               : #dce2df;  // very light green-gray
+/* Color codes used for the theme */
+$gray                       : #7a8288;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : #9ba1a6;
+$lighter-gray               : mix(#fff, $gray, 90%);
 
-$danger-color               : #d9534f;
-$info-color                 : #3c8d73;   // teal-green for info
-$notice-color               : #6b7a6f;
-$success-color              : #4caf50;   // classic green success
-$warning-color              : #d7a82e;   // muted amber
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : #2f7f93;
+$notice-color               : #7a8288;
+$success-color              : #62c462;
+$warning-color              : #f89406;
 
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Default light theme for the site */
 :root {
   --global-base-color                 : #{$gray};
   --global-bg-color                   : #121a14;    /* dark forest background */
