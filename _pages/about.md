@@ -26,7 +26,7 @@ Publications
   <!-- Left Image -->
   <div style="flex: 0 0 220px; min-width: 220px;">
     <img src="https://raw.githubusercontent.com/talalkhan1999/talalkhan1999.github.io/master/images/SLR.jpg" 
-         alt="Coastal Erosion on Beachfront Properties" 
+         alt="" 
          style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
   </div>
   <!-- Text Section -->
@@ -51,7 +51,7 @@ Work in Progress
   <!-- Left Image -->
   <div style="flex: 0 0 220px; min-width: 220px;">
     <img src="https://raw.githubusercontent.com/talalkhan1999/talalkhan1999.github.io/master/images/rainFire.png" 
-         alt="Coastal Erosion on Beachfront Properties" 
+         alt="" 
          style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
   </div>
   <!-- Text Section -->
@@ -73,7 +73,7 @@ We identify market responses to rainfall and fire risk in Hawai‘i’s real est
   <!-- Left Image -->
   <div style="flex: 0 0 220px; min-width: 220px;">
     <img src="https://raw.githubusercontent.com/talalkhan1999/talalkhan1999.github.io/master/images/powwow.jpg" 
-         alt="Coastal Erosion on Beachfront Properties" 
+         alt="" 
          style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
   </div>
   <!-- Text Section -->
