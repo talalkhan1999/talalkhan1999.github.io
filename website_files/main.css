@@ -20,7 +20,7 @@
 /* Sub Menu */
 .site-nav .sub-menu a { display: block; font-weight: normal; height: auto; letter-spacing: 0; line-height: 1.2em; padding: 4px 10px; color: #0076A8; }
 
-.site-nav .sub-menu a:hover { color: #003087; }
+.site-nav .sub-menu a:hover { color: #b3995d; }
 
 .site-nav .sub-menu { background: #ffffff; border-color: #0076A8; min-width: 265px; z-index: 2147483647; }
 
@@ -42,7 +42,7 @@
 
 .site-nav .page-link:not(:first-child) { margin-left: 20px; }
 
-.site-nav .page-link:hover {color: #FFB81C}
+.site-nav .page-link:hover {color: #b3995d}
 
 
 @media screen and (max-width: 600px) { .site-nav { position: absolute; top: 9px; right: 30px; background-color: #fdfdfd; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; } .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; } .site-nav .menu-icon > svg { width: 18px; height: 15px; } .site-nav .menu-icon > svg path { fill: #424242; } .site-nav .trigger { clear: both; display: none; } .site-nav:hover .trigger { display: block; padding-bottom: 5px; } .site-nav .page-link { display: block; padding: 5px 10px; } }
