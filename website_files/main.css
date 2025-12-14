@@ -345,3 +345,137 @@ ul.listing li.listing-item a { color: #0076A8; font-weight: 400; font-family: 'T
 
 
 /*# sourceMappingURL=main.css.map */
+
+
+
+
+
+/* =====================================================
+   MOBILE HEADER & NAV FIX (SAFE OVERRIDE)
+   Place at END of CSS
+===================================================== */
+
+@media screen and (max-width: 600px) {
+
+  /* ----- Header layout ----- */
+  .site-header {
+    height: auto;
+    min-height: 64px;
+  }
+
+  .site-header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  /* ----- Site title ----- */
+  .site-title {
+    float: none;
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  /* ----- Nav container ----- */
+  .site-nav {
+    float: none;
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    z-index: 999;
+    line-height: normal;
+  }
+
+  /* ----- Menu icon ----- */
+  .site-nav .menu-icon {
+    display: block;
+    width: 36px;
+    height: 26px;
+    padding-top: 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .site-nav .menu-icon svg {
+    width: 18px;
+    height: 15px;
+  }
+
+  .site-nav .menu-icon svg path {
+    fill: #424242;
+  }
+
+  /* ----- Hide menu until active ----- */
+  .site-nav .menu,
+  .site-nav .trigger {
+    display: none;
+    clear: both;
+  }
+
+  /* Show menu on hover OR when .active is added */
+  .site-nav:hover .menu,
+  .site-nav.active .menu,
+  .site-nav:hover .trigger,
+  .site-nav.active .trigger {
+    display: block;
+  }
+
+  /* ----- Menu list ----- */
+  .site-nav ul {
+    float: none;
+    text-align: left;
+    margin: 0;
+    padding: 6px 0;
+    min-width: 210px;
+  }
+
+  .site-nav ul li {
+    display: block;
+    margin: 0;
+    height: auto;
+  }
+
+  /* ----- Links ----- */
+  .site-nav a,
+  .site-nav .page-link {
+    display: block;
+    padding: 8px 12px;
+    background: #ffffff;
+    color: #024731;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .site-nav a:hover {
+    background: #f3f3f3;
+    color: #b3995d;
+    text-decoration: none;
+  }
+
+  /* ----- Sub-menus ----- */
+  .site-nav .sub-menu {
+    position: relative;
+    top: auto;
+    right: auto;
+    border: 0;
+    box-shadow: none;
+    padding-left: 14px;
+    min-width: unset;
+  }
+
+  .site-nav .sub-menu a {
+    background: transparent;
+    color: #024731;
+    padding: 6px 10px;
+    font-weight: 500;
+  }
+
+}
+
