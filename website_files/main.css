@@ -95,11 +95,12 @@ strong, b {
 }
 
 .site-title {
-    font-size: 40px;
+    font-size: clamp(1.6rem, 4.5vw, 2.5rem);
     font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: #ffffff;
     margin: 0;
+    line-height: 1.15;
+    white-space: normal;
 }
 
 .site-nav {
