@@ -15,9 +15,9 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 
 body {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-size: 1.1em;
-    line-height: 1.75;
-    font-weight: 250;
+    font-size: 1.05em;
+    line-height: 1.65;
+    font-weight: 400;
     color: #111;
     background-color: #fdfdfd;
     -webkit-text-size-adjust: 100%;
@@ -25,7 +25,7 @@ body {
 }
 
 h4, h5, h6 {
-    font-weight: 200;
+    font-weight: 400;
 }
 
 
@@ -174,7 +174,7 @@ strong, b {
    PAGE CONTENT: General Styles
 ============================================ */
 .page-content {
-    padding: 10px 0;
+    padding: 24px 0;
 }
 
 .post-header {
@@ -186,8 +186,9 @@ strong, b {
 }
 
 h1 {
-    letter-spacing: 0px;
-    line-height: 1;
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
     font-family: 'Roboto', sans-serif;
     color: #059e8f;
     margin-bottom: -10px;
@@ -204,8 +205,8 @@ h1 {
 ============================================ */
 .home-hero-wrapper {
     display: flex;
-    gap: 15px;
-    margin-bottom: 10px;
+    gap: 18px;
+    margin-bottom: 18px;
     align-items: stretch;
 }
 
@@ -217,7 +218,12 @@ h1 {
 
 /* Text gets padding */
 .about-me-text {
-    padding: 30px;
+    padding: 34px;
+}
+
+.about-me-text p {
+    font-size: 1rem;
+    line-height: 1.6 !important;
 }
 
 .home-profile-photo {
@@ -236,17 +242,27 @@ h1 {
 /* Index.html News Container */
 .news-container {
     background-color: rgba(240, 240, 240, 0.3);
-    padding: 30px 30px 15px 30px;
+    padding: 34px 34px 22px;
     border-radius: 10px;
+}
+
+.news-container .styled-box {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.news-container .styled-box b {
+    font-weight: 700;
 }
 
 .news-container .news-content-text a {
     color: #1a73e8;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .news-container .news-content-text a:hover {
     color: #1558b0;
+    text-decoration: none;
 }
 
 
@@ -256,17 +272,17 @@ h1 {
 /* Main Publications Container */
 .pubs-container {
     background-color: rgba(240, 240, 240, 0.3);
-    padding: 15px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding: 22px;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
     border-radius: 10px;
 }
 
 /* Individual Paper Container (Desktop View) */
 .paper-container {
     background-color: rgba(240, 240, 240, 0.8);
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 22px;
+    margin-bottom: 14px;
     border-radius: 10px;
     /* Desktop layout: Image and text side-by-side */
     display: flex;
@@ -282,7 +298,7 @@ h1 {
 /* Image Container (Desktop View) */
 .paper-container > div:first-child {
     flex: 0 0 auto;
-    padding-right: 30px;
+    padding-right: 34px;
 }
 
 /* Image Styling (Desktop View) */
@@ -297,14 +313,36 @@ h1 {
     background-color: #ffffff;
 }
 
+.paper-container h4 {
+    font-size: 1.18rem;
+    font-weight: 500 !important;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+
+.paper-container h5 {
+    font-size: 0.98rem;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.paper-container h5 + h5 {
+    margin-top: 4px;
+}
+
+.paper-container h5 b {
+    color: #111111;
+    font-weight: 700;
+}
+
 /* ============================================
    PAGE CONTENT: RESEARCH.HTML - LINK BUTTONS
 ============================================ */
 .pub-link-button {
     display: inline-flex;
     align-items: center;
-    padding: 1px 5px;
-    margin-top: 5px;
+    padding: 3px 8px;
+    margin-top: 9px;
     margin-right: 6px; /* Space between buttons */
     margin-bottom: 5px; /* Ensure space for wrapping */
     border: 1px solid #000000; /* Black border */
@@ -312,8 +350,9 @@ h1 {
     color: #000000; /* Black text color */
     background-color: rgba(240, 240, 240, 0.8); /* White background */
     text-decoration: none !important; /* Remove underline on the button */
-    font-size: 0.9em;
-    font-weight: 400; /* Changed to regular weight */
+    font-size: 0.88em;
+    font-weight: 500;
+    line-height: 1.35;
 /* transition: background-color 0.2s, color 0.2s, border-color 0.2s;*/
 }
 
@@ -338,15 +377,15 @@ h1 {
 ============================================ */
 .course-container {
     background-color: rgba(240, 240, 240, 0.3);
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 22px;
+    margin-bottom: 18px;
     border-radius: 10px;
 }
 
 .uni-container {
     background-color: rgba(240, 240, 240, 0.8);
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 22px;
+    margin-bottom: 14px;
     border-radius: 10px;
 }
 
@@ -360,12 +399,13 @@ h1 {
 }
 
 .uni-container ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     /* Removed: position: relative; */
     padding-left: 0; /* Removed padding for custom arrow */
     color: #000000;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.6;
     margin-left: 0px; /* Use margin to indent list items */
 }
 
@@ -373,9 +413,11 @@ h1 {
 /* Styling for university heading (was inline in HTML) */
 .uni-container h3 div {
     color: #000000;
-    font-size: 1.1em;
+    font-size: 1.12rem;
+    font-weight: 500;
+    line-height: 1.4;
     text-decoration: underline;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 }
 
 
@@ -430,6 +472,18 @@ body {
    MOBILE OVERRIDES (max-width: 600px)
 ============================================ */
 @media screen and (max-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+
+    .page-content {
+        padding: 16px 0;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
     /* --- MOBILE NAVIGATION --- */
     .site-nav {
         position: absolute;
@@ -498,6 +552,14 @@ body {
         width: 100%;
     }
 
+    .about-me-text {
+        padding: 24px;
+    }
+
+    .news-container {
+        padding: 24px 22px 16px;
+    }
+
     .home-profile-photo {
         order: 1; /* Put image content above the text */
         flex: none;
@@ -519,12 +581,12 @@ body {
     .paper-container {
         flex-direction: column;
         text-align: center;
-        padding: 10px;
+        padding: 16px;
     }
 
     .paper-container > div:first-child {
         padding-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 16px;
         text-align: center;
     }
 
@@ -536,6 +598,20 @@ body {
     /* Ensure publication text content is left-aligned on mobile */
     .paper-container > div:last-child {
         text-align: left;
+    }
+
+    .paper-container h4 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .pubs-container,
+    .course-container {
+        padding: 16px;
+    }
+
+    .uni-container {
+        padding: 16px;
     }
 
     .pub-link-button {
@@ -560,7 +636,3 @@ body {
         text-align: left; /* Ensure list items are left aligned */
     }
 }
-
-
-
-modify css so that that it is uh manoa green with hinto of golden at the edge of that 
