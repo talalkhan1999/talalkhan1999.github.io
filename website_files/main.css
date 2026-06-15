@@ -240,6 +240,15 @@ h1 {
     border-radius: 10px;
 }
 
+.news-container .news-content-text a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+.news-container .news-content-text a:hover {
+    color: #1558b0;
+}
+
 
 /* ============================================
    PAGE CONTENT: RESEARCH.HTML
@@ -283,12 +292,9 @@ h1 {
     width: 330px;
 }
 
-.paper-container.policy-text-only {
-    display: block;
-}
-
-.paper-container.policy-text-only > div:first-child {
-    padding-right: 0;
+.paper-container img.policy-report-image {
+    object-fit: contain;
+    background-color: #ffffff;
 }
 
 /* ============================================
