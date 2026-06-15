@@ -283,6 +283,14 @@ h1 {
     width: 330px;
 }
 
+.paper-container.policy-text-only {
+    display: block;
+}
+
+.paper-container.policy-text-only > div:first-child {
+    padding-right: 0;
+}
+
 /* ============================================
    PAGE CONTENT: RESEARCH.HTML - LINK BUTTONS
 ============================================ */
