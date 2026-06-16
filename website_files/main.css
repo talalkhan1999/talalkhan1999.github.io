@@ -341,33 +341,51 @@ h1 {
 .pub-link-button {
     display: inline-flex;
     align-items: center;
-    padding: 3px 8px;
-    margin-top: 9px;
-    margin-right: 6px; /* Space between buttons */
-    margin-bottom: 5px; /* Ensure space for wrapping */
-    border: 1px solid #000000; /* Black border */
-    border-radius: 5px; /* Less round corners */
-    color: #000000; /* Black text color */
-    background-color: rgba(240, 240, 240, 0.8); /* White background */
-    text-decoration: none !important; /* Remove underline on the button */
+    gap: 6px;
+    padding: 5px 11px;
+    margin-top: 10px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(2, 71, 49, 0.35);
+    border-radius: 999px;
+    color: #024731;
+    background-color: #ffffff;
+    text-decoration: none !important;
     font-size: 0.88em;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.35;
-/* transition: background-color 0.2s, color 0.2s, border-color 0.2s;*/
+    box-shadow: 0 1px 2px rgba(2, 71, 49, 0.08);
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 
 .pub-link-button:hover {
-    background-color: #5F7F7B;
-    color: #000000;
+    background-color: rgba(179, 153, 93, 0.16);
+    color: #024731;
     text-decoration: none !important;
-    border-color: #555555; /* Slightly darker border on hover */
+    border-color: #B3995D;
+    box-shadow: 0 2px 6px rgba(2, 71, 49, 0.14);
 }
 
-.pub-link-button svg {
-    margin-right: 5px;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
+.pub-link-button.pdf-link::before,
+.pub-link-button.media-link::before,
+.pub-link-button.syllabus-link::before {
+    content: "";
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pub-link-button.pdf-link::before,
+.pub-link-button.syllabus-link::before {
+    background-image: url("./icons/paper-icon.svg");
+}
+
+.pub-link-button.media-link::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23024731'/%3E%3Cpath d='M10 8.5v7l6-3.5-6-3.5z' fill='white'/%3E%3C/svg%3E");
 }
 
 
