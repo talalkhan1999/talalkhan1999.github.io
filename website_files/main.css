@@ -19,7 +19,7 @@ body {
     line-height: 1.65;
     font-weight: 400;
     color: #111;
-    background-color: #fdfdfd;
+    background-color: #fbfaf7;
     -webkit-text-size-adjust: 100%;
     text-align: left;
 }
@@ -44,8 +44,8 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #000000;
-    text-decoration: underline;
+    color: #1558b0;
+    text-decoration: none;
 }
 
 img {
@@ -110,6 +110,7 @@ strong, b {
 
 .site-title:hover {
     color: #C8A951;
+    text-decoration: none;
 }
 
 
@@ -151,6 +152,7 @@ strong, b {
 }
 .site-nav .page-link:hover {
     color: #C8A951;
+    text-decoration: none;
 }
 
 /* Style for current active page link */
@@ -211,8 +213,10 @@ h1 {
 }
 
 .about-me-container {
-    background-color: rgba(240, 240, 240, 0.3);
-    border-radius: 10px;
+    background-color: #fffefa;
+    border: 1px solid rgba(2, 71, 49, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(2, 71, 49, 0.06);
     flex: 1;
 }
 
@@ -226,6 +230,23 @@ h1 {
     line-height: 1.6 !important;
 }
 
+.about-me-text a,
+.news-container .news-content-text a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.18s ease, background-size 0.18s ease;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+}
+
+.about-me-text a:hover,
+.news-container .news-content-text a:hover {
+    color: #1558b0;
+    background-size: 100% 1px;
+}
+
 .home-profile-photo {
     flex: 0 0 300px;
     display: flex;
@@ -236,14 +257,17 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: 0 8px 24px rgba(2, 71, 49, 0.08);
 }
 
 
 /* Index.html News Container */
 .news-container {
-    background-color: rgba(240, 240, 240, 0.3);
+    background-color: #fffefa;
     padding: 34px 34px 22px;
-    border-radius: 10px;
+    border: 1px solid rgba(2, 71, 49, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(2, 71, 49, 0.06);
 }
 
 .news-container .styled-box {
@@ -255,39 +279,37 @@ h1 {
     font-weight: 700;
 }
 
-.news-container .news-content-text a {
-    color: #1a73e8;
-    text-decoration: none;
-}
-
-.news-container .news-content-text a:hover {
-    color: #1558b0;
-    text-decoration: none;
-}
-
-
 /* ============================================
    PAGE CONTENT: RESEARCH.HTML
 ============================================ */
 /* Main Publications Container */
 .pubs-container {
-    background-color: rgba(240, 240, 240, 0.3);
+    background-color: #fffefa;
     padding: 22px;
     padding-bottom: 14px;
     margin-bottom: 18px;
-    border-radius: 10px;
+    border: 1px solid rgba(2, 71, 49, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(2, 71, 49, 0.06);
 }
 
 /* Individual Paper Container (Desktop View) */
 .paper-container {
-    background-color: rgba(240, 240, 240, 0.8);
+    background-color: #f7f5f0;
     padding: 22px;
     margin-bottom: 14px;
-    border-radius: 10px;
+    border: 1px solid rgba(2, 71, 49, 0.05);
+    border-radius: 12px;
     /* Desktop layout: Image and text side-by-side */
     display: flex;
 /* align-items: flex-start !important;*/
     position: relative;
+    box-shadow: 0 4px 14px rgba(2, 71, 49, 0.05);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.paper-container:hover {
+    box-shadow: 0 8px 22px rgba(2, 71, 49, 0.09);
 }
 
 /* Fix: Remove top margin from the first H4 in the text container to align text with image top */
@@ -306,6 +328,13 @@ h1 {
     border-radius: 5px;
     height: 225px;
     width: 330px;
+    box-shadow: 0 2px 8px rgba(2, 71, 49, 0.08);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.paper-container a:hover img.rounded-image {
+    transform: translateY(-2px) scale(1.015);
+    box-shadow: 0 8px 18px rgba(2, 71, 49, 0.14);
 }
 
 .paper-container img.policy-report-image {
@@ -394,17 +423,21 @@ h1 {
    PAGE CONTENT: TEACHING.HTML
 ============================================ */
 .course-container {
-    background-color: rgba(240, 240, 240, 0.3);
+    background-color: #fffefa;
     padding: 22px;
     margin-bottom: 18px;
-    border-radius: 10px;
+    border: 1px solid rgba(2, 71, 49, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(2, 71, 49, 0.06);
 }
 
 .uni-container {
-    background-color: rgba(240, 240, 240, 0.8);
+    background-color: #f7f5f0;
     padding: 22px;
     margin-bottom: 14px;
-    border-radius: 10px;
+    border: 1px solid rgba(2, 71, 49, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(2, 71, 49, 0.05);
 }
 
 /* List/Course Styling (No Arrows) */
@@ -505,41 +538,46 @@ body {
     /* --- MOBILE NAVIGATION --- */
     .site-nav {
         position: absolute;
-        top: 27px;
-        right: 30px;
-        background-color: #fdfdfd;
-        border: 1px solid #e8e8e8;
-        border-radius: 5px;
+        top: 24px;
+        right: 24px;
+        background-color: #024731;
+        border: 1px solid rgba(179, 153, 93, 0.75);
+        border-radius: 10px;
         text-align: right;
         z-index: 10;
+        box-shadow: 0 10px 24px rgba(2, 71, 49, 0.22);
+        overflow: hidden;
     }
 
     .site-nav .menu-icon {
         display: block;
         float: right;
-        width: 36px;
-        height: 26px;
+        width: 42px;
+        height: 34px;
         line-height: 0;
         padding-top: 10px;
         text-align: center;
+        background-color: #fffefa;
+        border-left: 1px solid rgba(179, 153, 93, 0.35);
+        border-bottom: 1px solid rgba(179, 153, 93, 0.35);
     }
     .site-nav .menu-icon > svg {
         width: 18px;
         height: 15px;
     }
     .site-nav .menu-icon > svg path {
-        fill: #424242;
+        fill: #024731;
     }
 
     .site-nav .trigger {
         clear: both;
         display: none;
+        min-width: 178px;
     }
 
     .site-nav.active .trigger {
         display: block;
-        padding-bottom: 5px;
-        padding-right: 20px;
+        padding: 8px 0;
     }
 
     /* Make list items stack vertically on mobile */
@@ -550,10 +588,19 @@ body {
 
     .site-nav .page-link {
         display: block;
-        padding: 5px 10px;
-        color: #000000;
+        padding: 10px 16px;
+        color: #ffffff;
         background: none;
         text-align: left;
+        margin-left: 0 !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .site-nav .page-link:hover,
+    .site-nav ul li.current a {
+        color: #C8A951;
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.06);
     }
 
     /* --- INDEX.HTML LAYOUT FIXES (Image) --- */
