@@ -146,6 +146,7 @@ strong, b {
     color: #ffffff;
     background:none;
     line-height: 1.75;
+    position: relative;
 }
 .site-nav .page-link:not(:first-child) {
     margin-left: 20px;
@@ -157,8 +158,19 @@ strong, b {
 
 /* Style for current active page link */
 .site-nav ul li.current a {
-    color: #C8A951; /* Highlight active page */
-    text-decoration: underline;
+    color: #C8A951;
+    text-decoration: none;
+}
+
+.site-nav ul li.current a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #C8A951;
+    border-radius: 999px;
 }
 
 /* Hide menu icon on desktop */
@@ -228,6 +240,12 @@ h1 {
 .about-me-text p {
     font-size: 1rem;
     line-height: 1.6 !important;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.about-me-text p:last-child {
+    margin-bottom: 0;
 }
 
 .about-me-text a,
@@ -253,11 +271,18 @@ h1 {
 }
 
 .home-profile-photo img {
-    border-radius: 10px;
+    border-radius: 999px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     box-shadow: 0 8px 24px rgba(2, 71, 49, 0.08);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.home-profile-photo a:hover img {
+    transform: translateY(-2px) scale(1.015);
+    box-shadow: 0 12px 28px rgba(2, 71, 49, 0.16);
 }
 
 
@@ -268,6 +293,21 @@ h1 {
     border: 1px solid rgba(2, 71, 49, 0.06);
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(2, 71, 49, 0.06);
+}
+
+.about-me-container,
+.news-container,
+.pubs-container,
+.course-container {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.about-me-container:hover,
+.news-container:hover,
+.pubs-container:hover,
+.course-container:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 30px rgba(2, 71, 49, 0.08);
 }
 
 .news-container .styled-box {
@@ -310,6 +350,7 @@ h1 {
 
 .paper-container:hover {
     box-shadow: 0 8px 22px rgba(2, 71, 49, 0.09);
+    transform: translateY(-1px);
 }
 
 /* Fix: Remove top margin from the first H4 in the text container to align text with image top */
@@ -434,10 +475,18 @@ h1 {
 .uni-container {
     background-color: #f7f5f0;
     padding: 22px;
+    padding-right: 150px;
     margin-bottom: 14px;
     border: 1px solid rgba(2, 71, 49, 0.05);
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(2, 71, 49, 0.05);
+    position: relative;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.uni-container:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px rgba(2, 71, 49, 0.09);
 }
 
 /* List/Course Styling (No Arrows) */
@@ -469,6 +518,23 @@ h1 {
     line-height: 1.4;
     text-decoration: underline;
     margin-bottom: 12px;
+}
+
+.uni-header {
+    text-decoration: none !important;
+}
+
+.uni-header span {
+    text-decoration: underline;
+}
+
+.uni-logo {
+    width: 112px;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 22px;
 }
 
 
@@ -504,18 +570,30 @@ body {
     flex: 1 0 auto;
 }
 
-/* 4. The blank dark footer */
+/* 4. Minimal footer */
 .site-footer {
-    background-color: #024731; /* Matches header background */
-    height: 20px;              /* Thickness of the line */
-    flex-shrink: 0;            /* Prevents the footer from shrinking */
+    background-color: #024731;
+    border-top: 4px solid #B3995D;
+    color: #ffffff;
+    flex-shrink: 0;
+    font-size: 0.9rem;
 }
 
-
-
-/* Keep the wrapper clean */
 .site-footer .wrapper {
-    display: none; 
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #C8A951;
 }
 
 
@@ -603,6 +681,10 @@ body {
         background-color: rgba(255, 255, 255, 0.06);
     }
 
+    .site-nav ul li.current a::after {
+        display: none;
+    }
+
     /* --- INDEX.HTML LAYOUT FIXES (Image) --- */
     .home-hero-wrapper {
         flex-direction: column; /* Stack image and text vertically */
@@ -636,6 +718,7 @@ body {
 
     .home-profile-photo img {
         max-width: 80%;
+        border-radius: 999px;
         height: auto;
         width: auto; 
         object-fit: contain; 
@@ -677,6 +760,7 @@ body {
 
     .uni-container {
         padding: 16px;
+        padding-top: 78px;
     }
 
     .pub-link-button {
@@ -697,7 +781,24 @@ body {
     .uni-container h3 div {
         text-align: left; /* Align university heading left */
     }
+
+    .uni-header {
+        display: block;
+    }
+
+    .uni-logo {
+        width: 108px;
+        top: 16px;
+        right: 16px;
+    }
+
     .uni-container ul li {
         text-align: left; /* Ensure list items are left aligned */
+    }
+
+    .site-footer .wrapper {
+        flex-direction: column;
+        gap: 2px;
+        text-align: center;
     }
 }
