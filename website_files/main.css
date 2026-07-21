@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* ============================================
    GLOBAL RESET & BASE STYLES
@@ -14,8 +14,8 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 }
 
 body {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-size: 1.05em;
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(1.05em - 1pt);
     line-height: 1.65;
     font-weight: 400;
     color: #111;
@@ -129,7 +129,7 @@ strong, b {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -140,6 +140,40 @@ strong, b {
     margin-left: 20px;
     vertical-align: middle;
 
+}
+
+.site-nav ul li.theme-control {
+    margin-left: 18px;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    line-height: 1.2;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    border-color: #C8A951;
+    color: #C8A951;
+    outline: none;
+    transform: translateY(-1px);
+}
+
+.theme-toggle-icon {
+    font-size: 1rem;
+    line-height: 1;
 }
 
 .site-nav .page-link {
@@ -203,7 +237,7 @@ h1 {
     font-size: 2rem;
     letter-spacing: -0.02em;
     line-height: 1.15;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
     color: #059e8f;
     margin-bottom: -10px;
 }
@@ -266,23 +300,38 @@ h1 {
 }
 
 .home-profile-photo {
-    flex: 0 0 300px;
+    flex: 0 0 292px;
     display: flex;
+    align-items: center;
 }
 
-.home-profile-photo img {
-    border-radius: 999px;
+.home-profile-photo a {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+    aspect-ratio: 9 / 10;
+    overflow: hidden;
+    border-radius: 48% / 44%;
     box-shadow: 0 8px 24px rgba(2, 71, 49, 0.08);
     transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
-.home-profile-photo a:hover img {
-    transform: translateY(-2px) scale(1.015);
+.home-profile-photo img {
+    display: block;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.22s ease;
+}
+
+.home-profile-photo a:hover {
+    transform: translateY(-2px);
     box-shadow: 0 12px 28px rgba(2, 71, 49, 0.16);
+}
+
+.home-profile-photo a:hover img {
+    transform: scale(1.008);
 }
 
 
@@ -664,6 +713,20 @@ body {
         margin-left: 0;
     }
 
+    .site-nav ul li.theme-control {
+        margin-left: 0;
+        padding: 10px 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        text-align: left;
+    }
+
+    .theme-toggle {
+        width: 34px;
+        height: 34px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
     .site-nav .page-link {
         display: block;
         padding: 10px 16px;
@@ -716,12 +779,16 @@ body {
         justify-content: center;
     }
 
+    .home-profile-photo a {
+        width: min(80%, 292px);
+    }
+
     .home-profile-photo img {
-        max-width: 80%;
-        border-radius: 999px;
-        height: auto;
-        width: auto; 
-        object-fit: contain; 
+        max-width: none;
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
 
@@ -801,4 +868,128 @@ body {
         gap: 2px;
         text-align: center;
     }
+}
+
+/* ============================================
+   OPTIONAL NIGHT MODE
+============================================ */
+body,
+.site-header,
+.site-footer,
+.about-me-container,
+.news-container,
+.pubs-container,
+.paper-container,
+.course-container,
+.uni-container {
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+html.dark-mode body {
+    color: #eef2f0;
+    background-color: #0b0f0e;
+}
+
+html.dark-mode body .site-header,
+html.dark-mode body .site-footer,
+html.dark-mode body .site-nav {
+    background-color: #101513;
+}
+
+html.dark-mode body .about-me-container,
+html.dark-mode body .news-container,
+html.dark-mode body .pubs-container,
+html.dark-mode body .course-container {
+    background-color: #141918;
+    border-color: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode body .paper-container,
+html.dark-mode body .uni-container {
+    background-color: #1b211f;
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.26);
+}
+
+html.dark-mode body h1,
+html.dark-mode body h2 {
+    color: #79cdbd;
+}
+
+html.dark-mode body a {
+    color: #dde5e1;
+}
+
+html.dark-mode body .about-me-text a,
+html.dark-mode body .news-container .news-content-text a {
+    color: #8fc7ff;
+}
+
+html.dark-mode body .paper-container h5,
+html.dark-mode body .uni-container ul li,
+html.dark-mode body .uni-container h3 div {
+    color: #b9c3be;
+}
+
+html.dark-mode body .paper-container h5 b {
+    color: #f4f7f5;
+}
+
+html.dark-mode body .pub-link-button {
+    color: #e4eae7;
+    background-color: #232a27;
+    border-color: rgba(200, 169, 81, 0.55);
+}
+
+html.dark-mode body .pub-link-button:hover {
+    color: #ffffff;
+    background-color: #2d3532;
+}
+
+html.dark-mode body .about-me-text img[src$="paper-icon.svg"],
+html.dark-mode body .pub-link-button.pdf-link::before,
+html.dark-mode body .pub-link-button.syllabus-link::before {
+    filter: invert(1) brightness(0.92);
+}
+
+html.dark-mode body .uni-logo {
+    box-sizing: border-box;
+    padding: 5px 7px;
+    border: 1px solid rgba(200, 169, 81, 0.5);
+    border-radius: 7px;
+    background-color: #f7f4ec;
+}
+
+html.dark-mode body .show-more-btn {
+    color: #e7ece9;
+}
+
+html.dark-mode body .show-more-btn:hover {
+    color: #79cdbd;
+}
+
+html.dark-mode body .theme-toggle {
+    color: #101513;
+    background-color: #C8A951;
+    border-color: #d6bd72;
+}
+
+html.dark-mode body .theme-toggle:hover,
+html.dark-mode body .theme-toggle:focus-visible {
+    color: #ffffff;
+    background-color: #a98e46;
+}
+
+html.dark-mode body .site-footer a,
+html.dark-mode body .site-title,
+html.dark-mode body .site-nav a {
+    color: #ffffff;
+}
+
+html.dark-mode body .site-footer a:hover,
+html.dark-mode body .site-title:hover,
+html.dark-mode body .site-nav a:hover,
+html.dark-mode body .site-nav ul li.current a {
+    color: #C8A951;
 }
