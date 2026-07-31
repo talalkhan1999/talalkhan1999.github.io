@@ -22,10 +22,13 @@
     <header class="site-header">
         <div class="wrapper">
 
-            <a class="site-title" href="https://talalkhan1999.github.io/">Muhammad Talal Khan</a>
+            <div class="site-identity">
+                <div class="site-title">Muhammad Talal Khan</div>
+                <div class="site-subtitle">Finance PhD Student · University of Hawai‘i at Mānoa</div>
+            </div>
 
             <nav class="site-nav">
-                <a href="javascript:void(0)" class="menu-icon menu.open">
+                <a href="javascript:void(0)" class="menu-icon menu.open" aria-label="Open navigation menu">
                     <svg viewBox="0 0 18 15">
                         <path fill="#424242"
                               d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0
@@ -45,7 +48,8 @@
                 <div class="trigger">
                     <h1>Main Navigation</h1>
                     <ul class="menu">
-                        <li><a href="https://talalkhan1999.github.io/" class="page-link">Home</a></li>
+                        <li class="current"><a href="https://talalkhan1999.github.io/" class="page-link">Home</a></li>
+                        <li><a href="./website_files/cv.pdf" class="page-link" target="_blank" rel="noopener">CV</a></li>
                         <li><a href="research.html" class="page-link">Research</a></li>
                         <li><a href="policy.html" class="page-link">Policy</a></li>
                         <li><a href="teaching.html" class="page-link">Teaching</a></li>
@@ -104,31 +108,35 @@
                                 </p>
 
                                 <p>
-                                    I also conduct research in <b>real estate</b> and <b>environmental economics</b>, focusing on climate risk and affordability.
+                                    I also conduct research in <b>real estate</b> and <b>environmental economics</b>, focusing on climate change and affordability.
                                     My past roles include work with the
                                     <a href="https://uhero.hawaii.edu/">University of Hawai‘i Economic Research Organization (UHERO)</a> and the
                                     <a href="https://manoa.hawaii.edu/isr/">Institute for Sustainability and Resilience</a>, where I contributed to statewide sustainability initiatives.
                                 </p>
 
                                 <p>
-                                    See my
-                                    <a href="./website_files/cv.pdf"><img src="./website_files/icons/paper-icon.svg" style="height: 17px; vertical-align: middle;"> <b>CV</b></a>
-                                    and my
-                                    <a href="https://scholar.google.com/citations?user=vwgqz8UAAAAJ&amp;hl=en&amp;oi=sra"><img src="./website_files/icons/google_scholar.png" style="height: 17px; vertical-align: middle;"> <b>Google Scholar</b></a>.
-                                </p>
-                                <p>
-                                    You can reach out to me at <a href="mailto:mtkhan@hawaii.edu"><b>mtkhan[at]hawaii.edu</b></a>.
+                                    You can reach out to me at <a class="email-link" href="mailto:mtkhan@hawaii.edu"><b>mtkhan[at]hawaii.edu</b></a>.
                                 </p>
 
                             </div>
                         </div>
 
                         <div class="home-profile-photo">
-                            <a href="https://talalkhan1999.github.io/">
+                            <a class="profile-photo-link" href="https://talalkhan1999.github.io/">
                                 <img class="rounded-image"
                                      src="./website_files/talal.png"
-                                     alt="">
+                                     alt="Muhammad Talal Khan">
                             </a>
+                            <div class="profile-links" aria-label="Professional profiles">
+                                <a href="https://scholar.google.com/citations?user=vwgqz8UAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener">
+                                    <img src="./website_files/icons/google_scholar.png" alt="" aria-hidden="true">
+                                    <span>Google Scholar</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tete1999" target="_blank" rel="noopener">
+                                    <span class="linkedin-icon" aria-hidden="true">in</span>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -281,7 +289,6 @@
 
     <footer class="site-footer">
         <div class="wrapper">
-            <span><a href="mailto:mtkhan@hawaii.edu">mtkhan@hawaii.edu</a></span>
             <span>Last updated July 2026</span>
         </div>
     </footer>

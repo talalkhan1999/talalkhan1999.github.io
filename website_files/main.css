@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* ============================================
    GLOBAL RESET & BASE STYLES
@@ -80,37 +80,57 @@ strong, b {
    HEADER & NAVIGATION
 ============================================ */
 .site-header {
-    height: 90px;
+    height: auto;
     background: #024731;
-    min-height: 90px;
-    border-bottom: 6px solid #B3995D; /* subtle UH gold accent */
+    min-height: 76px;
+    padding-top: 8px;
+    border-bottom: 6px solid #B3995D;
 }
 
 
 .site-header .wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    min-height: 76px;
+}
+
+.site-identity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 0;
+    font-family: "Libre Baskerville", Georgia, serif;
 }
 
 .site-title {
-    font-size: clamp(1.6rem, 4.5vw, 2.5rem);
+    font-size: clamp(1.4rem, 3.2vw, 1.9rem);
+    font-family: "Libre Baskerville", Georgia, serif;
     font-weight: 400;
     color: #ffffff;
     margin: 0;
     line-height: 1.15;
+    letter-spacing: -0.015em;
     white-space: normal;
+    text-align: left;
+}
+
+.site-subtitle {
+    color: rgba(255, 255, 255, 0.86);
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.74rem;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    line-height: 1.25;
+    white-space: nowrap;
 }
 
 .site-nav {
-    margin-left: auto;
-}
-
-
-.site-title:hover {
-    color: #C8A951;
-    text-decoration: none;
+    width: auto;
+    margin: 0 0 0 auto;
+    padding: 0;
 }
 
 
@@ -122,8 +142,8 @@ strong, b {
 .site-nav ul {
     text-align: right;
     padding-top: 9px;
-    font-size: 17px;
-    letter-spacing: 1px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
     line-height: 1em;
     font-weight: 600;
     margin: 0;
@@ -137,21 +157,21 @@ strong, b {
 
 .site-nav ul li {
     display: inline-block;
-    margin-left: 20px;
+    margin: 0 8px;
     vertical-align: middle;
 
 }
 
 .site-nav ul li.theme-control {
-    margin-left: 18px;
+    margin-left: 8px;
 }
 
 .theme-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     padding: 0;
     border: 1px solid rgba(255, 255, 255, 0.45);
     border-radius: 50%;
@@ -181,9 +201,6 @@ strong, b {
     background:none;
     line-height: 1.75;
     position: relative;
-}
-.site-nav .page-link:not(:first-child) {
-    margin-left: 20px;
 }
 .site-nav .page-link:hover {
     color: #C8A951;
@@ -299,13 +316,22 @@ h1 {
     background-size: 100% 1px;
 }
 
+.about-me-text .email-link {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    background-image: none;
+}
+
 .home-profile-photo {
     flex: 0 0 292px;
     display: flex;
+    flex-direction: column;
+    gap: 14px;
     align-items: center;
+    justify-content: center;
 }
 
-.home-profile-photo a {
+.home-profile-photo .profile-photo-link {
     display: block;
     width: 100%;
     aspect-ratio: 9 / 10;
@@ -315,7 +341,7 @@ h1 {
     transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
-.home-profile-photo img {
+.home-profile-photo .profile-photo-link img {
     display: block;
     border-radius: 0;
     width: 100%;
@@ -325,13 +351,58 @@ h1 {
     transition: transform 0.22s ease;
 }
 
-.home-profile-photo a:hover {
+.home-profile-photo .profile-photo-link:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 28px rgba(2, 71, 49, 0.16);
 }
 
-.home-profile-photo a:hover img {
+.home-profile-photo .profile-photo-link:hover img {
     transform: scale(1.008);
+}
+
+.profile-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    width: 100%;
+}
+
+.profile-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #024731;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.profile-links a:hover {
+    color: #1558b0;
+}
+
+.profile-links img {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+}
+
+.profile-links .linkedin-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    background-color: #0a66c2;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
 }
 
 
@@ -558,6 +629,24 @@ h1 {
     margin-left: 0px; /* Use margin to indent list items */
 }
 
+.course-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 8px 0 0 18px;
+}
+
+.course-terms span {
+    padding: 3px 9px;
+    border: 1px solid rgba(2, 71, 49, 0.25);
+    border-radius: 999px;
+    background-color: rgba(2, 71, 49, 0.06);
+    color: #024731;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
 
 /* Styling for university heading (was inline in HTML) */
 .uni-container h3 div {
@@ -625,15 +714,15 @@ body {
     border-top: 4px solid #B3995D;
     color: #ffffff;
     flex-shrink: 0;
-    font-size: 0.9rem;
+    font-size: 0.76rem;
 }
 
 .site-footer .wrapper {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .site-footer a {
@@ -663,10 +752,40 @@ body {
     }
 
     /* --- MOBILE NAVIGATION --- */
+    .site-header,
+    .site-header .wrapper {
+        min-height: 74px;
+    }
+
+    .site-header {
+        padding-top: 5px;
+    }
+
+    .site-header .wrapper {
+        justify-content: flex-start;
+    }
+
+    .site-identity {
+        max-width: calc(100% - 76px);
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .site-title {
+        margin: 0;
+        font-size: clamp(1.2rem, 5.7vw, 1.5rem);
+        text-align: left;
+    }
+
+    .site-subtitle {
+        font-size: 0.62rem;
+        letter-spacing: 0;
+    }
+
     .site-nav {
         position: absolute;
-        top: 24px;
-        right: 24px;
+        top: 18px;
+        right: 15px;
         background-color: #024731;
         border: 1px solid rgba(179, 153, 93, 0.75);
         border-radius: 10px;
@@ -674,6 +793,10 @@ body {
         z-index: 10;
         box-shadow: 0 10px 24px rgba(2, 71, 49, 0.22);
         overflow: hidden;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        border-top: 0;
     }
 
     .site-nav .menu-icon {
@@ -779,16 +902,25 @@ body {
         justify-content: center;
     }
 
-    .home-profile-photo a {
+    .home-profile-photo .profile-photo-link {
         width: min(80%, 292px);
     }
 
-    .home-profile-photo img {
+    .home-profile-photo .profile-photo-link img {
         max-width: none;
         border-radius: 0;
         height: 100%;
         width: 100%;
         object-fit: cover;
+    }
+
+    .profile-links {
+        max-width: 330px;
+        gap: 10px 14px;
+    }
+
+    .profile-links a {
+        font-size: 0.86rem;
     }
 
 
@@ -932,6 +1064,12 @@ html.dark-mode body .uni-container h3 div {
     color: #b9c3be;
 }
 
+html.dark-mode body .course-terms span {
+    color: #dde5e1;
+    background-color: rgba(121, 205, 189, 0.08);
+    border-color: rgba(121, 205, 189, 0.3);
+}
+
 html.dark-mode body .paper-container h5 b {
     color: #f4f7f5;
 }
@@ -969,6 +1107,14 @@ html.dark-mode body .show-more-btn:hover {
     color: #79cdbd;
 }
 
+html.dark-mode body .profile-links a {
+    color: #dde5e1;
+}
+
+html.dark-mode body .profile-links a:hover {
+    color: #8fc7ff;
+}
+
 html.dark-mode body .theme-toggle {
     color: #101513;
     background-color: #C8A951;
@@ -988,7 +1134,6 @@ html.dark-mode body .site-nav a {
 }
 
 html.dark-mode body .site-footer a:hover,
-html.dark-mode body .site-title:hover,
 html.dark-mode body .site-nav a:hover,
 html.dark-mode body .site-nav ul li.current a {
     color: #C8A951;
