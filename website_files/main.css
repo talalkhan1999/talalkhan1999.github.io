@@ -595,12 +595,12 @@ h1 {
 .uni-container {
     background-color: #f7f5f0;
     padding: 22px;
-    padding-right: 220px;
     margin-bottom: 14px;
     border: 1px solid rgba(2, 71, 49, 0.05);
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(2, 71, 49, 0.05);
     position: relative;
+    overflow: hidden;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
@@ -631,6 +631,7 @@ h1 {
 .course-title-row {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 14px;
     color: #111111;
@@ -646,6 +647,11 @@ h1 {
     gap: 16px;
     padding: 10px 0;
     border-top: 1px solid rgba(2, 71, 49, 0.1);
+}
+
+.course-info-row + .course-info-row {
+    padding-top: 2px;
+    border-top: 0;
 }
 
 .course-info-label {
@@ -694,6 +700,51 @@ h1 {
     height: 13px;
 }
 
+.teaching-section-heading {
+    margin-bottom: 24px;
+}
+
+.teaching-section-heading-secondary {
+    margin-top: 38px;
+}
+
+.teaching-institution + .teaching-institution {
+    margin-top: 16px;
+}
+
+.ta-course-list {
+    display: grid;
+    gap: 0;
+    margin: 0;
+}
+
+.ta-course-item {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.9fr) minmax(0, 1.4fr);
+    align-items: center;
+    gap: 20px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(2, 71, 49, 0.09);
+}
+
+.ta-course-heading {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    align-items: baseline;
+    gap: 9px;
+    color: #202723;
+    font-size: 0.86rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.ta-course-code {
+    color: #024731;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+}
+
 
 /* Styling for university heading (was inline in HTML) */
 .uni-container h3 div {
@@ -701,11 +752,15 @@ h1 {
     font-size: 1.12rem;
     font-weight: 500;
     line-height: 1.4;
-    text-decoration: underline;
     margin-bottom: 12px;
 }
 
 .uni-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    width: 100%;
     text-decoration: none !important;
 }
 
@@ -714,12 +769,24 @@ h1 {
 }
 
 .uni-logo {
-    width: 170px;
+    width: 124px;
     height: auto;
-    display: block;
-    position: absolute;
-    top: 18px;
-    right: 22px;
+    max-height: 54px;
+    display: inline-block;
+    position: static;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    object-fit: contain;
+    object-position: center;
+    padding: 6px 8px;
+    border: 1px solid rgba(2, 71, 49, 0.12);
+    border-radius: 6px;
+    background-color: #fffefa;
+}
+
+.coe-logo {
+    width: 112px;
+    max-height: 54px;
 }
 
 
@@ -1006,7 +1073,6 @@ body {
 
     .uni-container {
         padding: 16px;
-        padding-top: 94px;
     }
 
     .pub-link-button {
@@ -1029,13 +1095,19 @@ body {
     }
 
     .uni-header {
-        display: block;
+        display: flex;
     }
 
     .uni-logo {
-        width: 150px;
-        top: 16px;
-        right: 16px;
+        width: 92px;
+        height: auto;
+        max-height: 44px;
+        margin: 0 0 0 auto;
+        padding: 5px 6px;
+    }
+
+    .coe-logo {
+        width: 84px;
     }
 
     .uni-container ul li {
@@ -1050,6 +1122,12 @@ body {
 
     .course-title-row {
         font-size: 0.98rem;
+    }
+
+    .ta-course-item {
+        grid-template-columns: 1fr;
+        gap: 7px;
+        padding: 12px 0;
     }
 
     .site-footer .wrapper {
@@ -1139,6 +1217,18 @@ html.dark-mode body .course-info-label {
     color: #98a59f;
 }
 
+html.dark-mode body .ta-course-item {
+    border-top-color: rgba(255, 255, 255, 0.11);
+}
+
+html.dark-mode body .ta-course-code {
+    color: #79cdbd;
+}
+
+html.dark-mode body .ta-course-heading {
+    color: #d2dbd7;
+}
+
 html.dark-mode body .paper-container h5 b {
     color: #f4f7f5;
 }
@@ -1161,11 +1251,9 @@ html.dark-mode body .pub-link-button.syllabus-link::before {
 }
 
 html.dark-mode body .uni-logo {
-    box-sizing: border-box;
-    padding: 5px 7px;
-    border: 1px solid rgba(200, 169, 81, 0.5);
-    border-radius: 7px;
-    background-color: #f7f4ec;
+    padding: 6px 8px;
+    border: 1px solid rgba(200, 169, 81, 0.52);
+    background-color: #fffefa;
 }
 
 html.dark-mode body .show-more-btn {
