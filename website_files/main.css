@@ -595,7 +595,7 @@ h1 {
 .uni-container {
     background-color: #f7f5f0;
     padding: 22px;
-    padding-right: 150px;
+    padding-right: 220px;
     margin-bottom: 14px;
     border: 1px solid rgba(2, 71, 49, 0.05);
     border-radius: 12px;
@@ -679,11 +679,19 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 .course-resource-links .pub-link-button {
     margin: 0;
+    padding: 3px 8px;
+    font-size: 0.78em;
+    line-height: 1.3;
+}
+
+.course-resource-links .pub-link-button::before {
+    width: 13px;
+    height: 13px;
 }
 
 
@@ -706,7 +714,7 @@ h1 {
 }
 
 .uni-logo {
-    width: 112px;
+    width: 170px;
     height: auto;
     display: block;
     position: absolute;
@@ -998,7 +1006,7 @@ body {
 
     .uni-container {
         padding: 16px;
-        padding-top: 78px;
+        padding-top: 94px;
     }
 
     .pub-link-button {
@@ -1025,7 +1033,7 @@ body {
     }
 
     .uni-logo {
-        width: 108px;
+        width: 150px;
         top: 16px;
         right: 16px;
     }
