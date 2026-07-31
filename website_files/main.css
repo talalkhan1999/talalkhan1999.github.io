@@ -619,21 +619,49 @@ h1 {
 }
 
 .uni-container ul li {
-    margin-bottom: 10px;
-    /* Removed: position: relative; */
-    padding-left: 0; /* Removed padding for custom arrow */
+    margin-bottom: 0;
+    padding-left: 0;
     color: #000000;
     font-weight: normal;
     font-size: 1rem;
     line-height: 1.6;
-    margin-left: 0px; /* Use margin to indent list items */
+    margin-left: 0;
+}
+
+.course-title-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 14px;
+    color: #111111;
+    font-size: 1.03rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.course-info-row {
+    display: grid;
+    grid-template-columns: 132px minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(2, 71, 49, 0.1);
+}
+
+.course-info-label {
+    color: #66716c;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+    line-height: 1.35;
+    text-transform: uppercase;
 }
 
 .course-terms {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
-    margin: 8px 0 0 18px;
+    margin: 0;
 }
 
 .course-terms span {
@@ -645,6 +673,17 @@ h1 {
     font-size: 0.82rem;
     font-weight: 600;
     line-height: 1.35;
+}
+
+.course-resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.course-resource-links .pub-link-button {
+    margin: 0;
 }
 
 
@@ -995,6 +1034,16 @@ body {
         text-align: left; /* Ensure list items are left aligned */
     }
 
+    .course-info-row {
+        grid-template-columns: 1fr;
+        gap: 7px;
+        padding: 11px 0;
+    }
+
+    .course-title-row {
+        font-size: 0.98rem;
+    }
+
     .site-footer .wrapper {
         flex-direction: column;
         gap: 2px;
@@ -1068,6 +1117,18 @@ html.dark-mode body .course-terms span {
     color: #dde5e1;
     background-color: rgba(121, 205, 189, 0.08);
     border-color: rgba(121, 205, 189, 0.3);
+}
+
+html.dark-mode body .course-title-row {
+    color: #f0f4f2;
+}
+
+html.dark-mode body .course-info-row {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark-mode body .course-info-label {
+    color: #98a59f;
 }
 
 html.dark-mode body .paper-container h5 b {
