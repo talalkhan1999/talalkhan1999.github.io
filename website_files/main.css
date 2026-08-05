@@ -166,15 +166,19 @@ strong, b {
 }
 
 .site-nav ul li.theme-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 8px;
+    line-height: 0;
 }
 
 .theme-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     padding: 0;
     border: 1px solid rgba(255, 255, 255, 0.45);
     border-radius: 50%;
@@ -196,9 +200,9 @@ strong, b {
 .theme-toggle-icon {
     position: relative;
     display: block;
-    width: 14px;
-    height: 14px;
-    flex: 0 0 14px;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
     font-size: 0;
     line-height: 0;
 }
@@ -206,10 +210,10 @@ strong, b {
 .theme-toggle[aria-pressed="true"] .theme-toggle-icon::before {
     content: "";
     position: absolute;
-    left: 1px;
-    top: 1px;
-    width: 12px;
-    height: 12px;
+    left: 2px;
+    top: 2px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: currentColor;
     -webkit-mask: radial-gradient(circle at 70% 30%, transparent 0 46%, #000 48%);
@@ -219,9 +223,8 @@ strong, b {
 .theme-toggle[aria-pressed="false"] .theme-toggle-icon {
     background: radial-gradient(
         circle,
-        transparent 0 2.2px,
-        currentColor 2.35px 3.45px,
-        transparent 3.6px
+        currentColor 0 3.4px,
+        transparent 3.65px
     );
 }
 
@@ -231,15 +234,15 @@ strong, b {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(currentColor, currentColor) center top / 1.25px 2.6px no-repeat,
-        linear-gradient(currentColor, currentColor) center bottom / 1.25px 2.6px no-repeat,
-        linear-gradient(currentColor, currentColor) left center / 2.6px 1.25px no-repeat,
-        linear-gradient(currentColor, currentColor) right center / 2.6px 1.25px no-repeat;
+        linear-gradient(currentColor, currentColor) center top / 1.6px 3.4px no-repeat,
+        linear-gradient(currentColor, currentColor) center bottom / 1.6px 3.4px no-repeat,
+        linear-gradient(currentColor, currentColor) left center / 3.4px 1.6px no-repeat,
+        linear-gradient(currentColor, currentColor) right center / 3.4px 1.6px no-repeat;
     border-radius: 50%;
 }
 
 .theme-toggle[aria-pressed="false"] .theme-toggle-icon::after {
-    transform: rotate(45deg) scale(0.92);
+    transform: rotate(45deg) scale(0.9);
 }
 
 .site-nav .page-link {
