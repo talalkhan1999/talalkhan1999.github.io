@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# R session files
+.RData
+.Rhistory
+.Rapp.history
+
+# Unused images
+website_files/old.png
