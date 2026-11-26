@@ -1355,8 +1355,7 @@ html.dark-mode body .site-nav ul li.current a {
 .policy-context a { color: #1558b0; text-decoration: underline; }
 .paper-abstract { margin: 16px 0 10px; font-size: 1rem; line-height: 1.6; text-align: justify; text-justify: inter-word; hyphens: auto; }
 .paper-abstract strong { font-size: inherit; }
-.policy-summary-label { margin-top: 12px; }
-.policy-context { margin: 4px 0 8px; }
+.policy-context { margin: 16px 0 8px; }
 .paper-container > div:last-child { min-width: 0; }
 html.dark-mode body .paper-doi,
 html.dark-mode body .policy-context a { color: #8ab4f8; }
@@ -1373,7 +1372,6 @@ html.dark-mode body .policy-context a { color: #8ab4f8; }
 .paper-container img.paper-chart-image,
 .paper-container img.policy-report-image { height: auto; object-fit: contain; background: #fff; }
 .paper-container > div:last-child > h5:last-child { margin-top: 12px; }
-.policy-summary-label { margin-top: 16px; }
 .policy-context { line-height: 1.6; }
 @media screen and (max-width: 800px) {
     .paper-container > div:first-child { align-self: center; }
