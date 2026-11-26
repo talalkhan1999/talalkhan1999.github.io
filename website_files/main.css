@@ -485,7 +485,6 @@ h1 {
     .home-main > .news-container .news-list { max-height: 320px !important; }
     .news-container .styled-box { flex-direction: column; gap: 3px; font-size: 0.9rem; }
     .news-container .styled-box b { width: auto; margin-right: 0; font-size: 0.8rem; }
-    .news-container .news-content-text { text-align: left; }
 }
 
 @media screen and (max-width: 800px) {
@@ -1655,8 +1654,14 @@ html.dark-mode body .about-me-text ul.bio-strands li::before { color: #C8A951; }
     text-decoration-skip-ink: all;
 }
 
-/* Justify prose while retaining natural alignment for headings and controls. */
+/* Justify content consistently at every viewport width. */
+.post-content,
 .post-content p,
+.post-content li,
+.post-content h4,
+.post-content h5,
+.about-me-text p.research-fields,
+.profile-details li > span,
 .about-me-text ul.bio-strands li,
 .news-content-text,
 .course-info-value {
@@ -1665,25 +1670,10 @@ html.dark-mode body .about-me-text ul.bio-strands li::before { color: #C8A951; }
     hyphens: auto;
     overflow-wrap: break-word;
 }
-.profile-card p { text-align: left; }
 .news-content-text { min-width: 0; }
 .news-container h1 { font-size: 1.6rem; }
 
 @media screen and (max-width: 600px) {
     .news-container .styled-box { flex-direction: column; gap: 3px; }
     .news-container .styled-box b { width: auto; margin-right: 0; }
-}
-
-/* Narrow screens need natural spacing rather than stretched word gaps. */
-@media screen and (max-width: 800px) {
-    .post-content p,
-    .about-me-text ul.bio-strands li,
-    .news-content-text,
-    .course-info-value,
-    .paper-container .paper-abstract,
-    .paper-container .paper-abstract p,
-    .paper-container .policy-context {
-        text-align: left;
-        hyphens: none;
-    }
 }
