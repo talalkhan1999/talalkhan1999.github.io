@@ -1348,3 +1348,38 @@ html.dark-mode body .site-nav a:hover,
 html.dark-mode body .site-nav ul li.current a {
     color: #C8A951;
 }
+
+/* Publication abstracts and DOI references */
+.paper-doi { font-size: 0.875rem; font-weight: 400; color: #1558b0; text-decoration: underline; white-space: nowrap; }
+.doi-separator { margin: 0 4px; color: #777; }
+.policy-context a { color: #1558b0; text-decoration: underline; }
+.paper-abstract { margin: 16px 0 10px; font-size: 1rem; line-height: 1.6; text-align: justify; text-justify: inter-word; hyphens: auto; }
+.paper-abstract strong { font-size: inherit; }
+.policy-summary-label { margin-top: 12px; }
+.policy-context { margin: 4px 0 8px; }
+.paper-container > div:last-child { min-width: 0; }
+html.dark-mode body .paper-doi,
+html.dark-mode body .policy-context a { color: #8ab4f8; }
+
+.paper-container img.paper-figure-image { height: auto; object-fit: contain; background: #fff; }
+
+/* Subtle rhythm and image refinements. */
+.site-nav ul li.current a::after { height: 3px; background-color: #d0b46c; }
+.paper-container { align-items: flex-start; margin-bottom: 20px; }
+.paper-container h4 { margin-bottom: 12px; line-height: 1.4; }
+.paper-container h5 + h5 { margin-top: 6px; }
+.paper-container img.rounded-image { object-fit: cover; }
+.paper-container img.paper-figure-image,
+.paper-container img.paper-chart-image,
+.paper-container img.policy-report-image { height: auto; object-fit: contain; background: #fff; }
+.paper-container > div:last-child > h5:last-child { margin-top: 12px; }
+.policy-summary-label { margin-top: 16px; }
+.policy-context { line-height: 1.6; }
+@media screen and (max-width: 800px) {
+    .paper-container > div:first-child { align-self: center; }
+    .paper-container { margin-bottom: 16px; }
+}
+
+.paper-container .paper-abstract, .paper-container .paper-abstract p { text-align: justify; text-justify: inter-word; hyphens: auto; }
+
+.paper-container .policy-context { text-align: justify; text-justify: inter-word; hyphens: auto; }
