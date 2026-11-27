@@ -1691,3 +1691,12 @@ html.dark-mode body .about-me-text ul.bio-strands li::before { color: #C8A951; }
         box-shadow: 0 8px 26px rgba(0, 0, 0, 0.3), 0 0 0 4px rgba(200, 169, 81, 0.07);
     }
 }
+
+/* Keep the profile CV link within a typical laptop viewport. */
+@media screen and (min-width: 1100px) and (max-width: 1599px) {
+    .profile-card-photo {
+        aspect-ratio: auto;
+        height: 350px;
+    }
+    .profile-card-photo img { object-position: 43% bottom; }
+}
