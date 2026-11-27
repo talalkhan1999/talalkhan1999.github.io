@@ -1677,3 +1677,17 @@ html.dark-mode body .about-me-text ul.bio-strands li::before { color: #C8A951; }
     .news-container .styled-box { flex-direction: column; gap: 3px; }
     .news-container .styled-box b { width: auto; margin-right: 0; }
 }
+
+/* Laptop profile: keep its content width, add breathing room around the card. */
+@media screen and (min-width: 1100px) and (max-width: 1599px) {
+    .home-layout { gap: 30px; }
+    .profile-card {
+        padding-inline: 30px;
+        border-color: rgba(179, 153, 93, 0.5);
+        box-shadow: 0 8px 26px rgba(2, 71, 49, 0.07), 0 0 0 4px rgba(179, 153, 93, 0.06);
+    }
+    html.dark-mode body .profile-card {
+        border-color: rgba(200, 169, 81, 0.5);
+        box-shadow: 0 8px 26px rgba(0, 0, 0, 0.3), 0 0 0 4px rgba(200, 169, 81, 0.07);
+    }
+}
